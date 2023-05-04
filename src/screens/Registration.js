@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userregister } from "../actions/userAction";
 import Loading from "../components/Loading";
@@ -16,7 +16,7 @@ function Registration() {
 
   const { error, loading, success } = registerstate;
   let register = () => {
-    if (password != cpassword) {
+    if (password !== cpassword) {
       alert("passwords not matched");
     } else {
       let user = { name, email, password, cpassword };

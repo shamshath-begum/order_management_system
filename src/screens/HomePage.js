@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // import pizzas from "../items";
 import Pizza from "../components/Pizza";
-import { default as api } from "../store/apiSlice";
+
 import { useDispatch, useSelector } from "react-redux";
 import { getAllChickens } from "../actions/chickenAction";
 import Loading from "../components/Loading";

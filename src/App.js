@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap";
-import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 import NavBar from "./components/NavBar";
 import HomePage from "./screens/HomePage";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
             <Route path="/registration" element={<Registration />} />
             <Route path="/login" element={<Login />} />
             <Route path="/orders" element={<OrderScreen />} />
-            {/* <Route path="*" element={<Navigate to="/" />} /> */}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
       </div>

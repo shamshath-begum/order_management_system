@@ -42,6 +42,7 @@ function NavBar() {
                     <a
                       className="dropdown-toggle"
                       type="button"
+                      href="/login"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                       style={{ textDecoration: "none", color: "black" }}
@@ -50,14 +51,14 @@ function NavBar() {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/orders">
                           orders
                         </a>
                       </li>
                       <li>
                         <a
                           className="dropdown-item"
-                          href="#"
+                          href="/login"
                           onClick={() => {
                             dispatch(logoutuser());
                           }}
@@ -69,7 +70,7 @@ function NavBar() {
                   </div>
                 ) : (
                   <li className="nav-item ">
-                    <a className="nav-link " href="/login">
+                    <a className="nav-link " aria-current="page" href="/login">
                       Login
                     </a>
                   </li>
