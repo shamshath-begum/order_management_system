@@ -1,0 +1,14 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  chicken: [],
+};
+export const chickenSlice = createSlice({
+  name: "chicken",
+  initialState,
+  reducers: {
+    getchicken: (state) => {},
+  },
+});
+export const { getchicken } = chickenSlice.actions;
+export default chickenSlice.reducer;
